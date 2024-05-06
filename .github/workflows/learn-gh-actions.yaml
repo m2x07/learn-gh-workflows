@@ -1,8 +1,8 @@
 name: build
 run-name: ${{ github.actor }} is learning Github Actions
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
-  check-bats-version:
+  deploy-to-github-pages:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repository
