@@ -1,6 +1,7 @@
 name: build
 run-name: ${{ github.actor }} is learning Github Actions
 on: [push, workflow_dispatch]
+permissions: write-all
 jobs:
   deploy-to-github-pages:
     runs-on: ubuntu-latest
