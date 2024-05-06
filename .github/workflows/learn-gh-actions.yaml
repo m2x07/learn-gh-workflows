@@ -18,7 +18,7 @@ jobs:
           git config --global user.name '${{github.repository_owner}}'
           git config --global user.email '${{github.repository_owner}}@users.noreply.github.com'
           git remote remove origin
-          git remove add origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git remote add origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
       - name: deploy to github pages
         run: |
           npm run build
