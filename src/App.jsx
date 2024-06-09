@@ -12,6 +12,7 @@ function App() {
             </p>
             <ul className="my-4 list-disc px-7 text-xl text-gray-700">
                 <li>change #1</li>
+                <li>change #2</li>
             </ul>
             <div className="links m-auto w-fit text-xl text-blue-700">
                 <a
